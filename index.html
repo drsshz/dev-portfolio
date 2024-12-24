@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Salman Zaidi Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+	<style>
+		/*======================================
+//--//-->   ABOUT
+======================================*/
+
+		.about-mf .box-shadow-full {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+
+		.about-mf .about-img {
+			margin-bottom: 2rem;
+		}
+
+		.about-mf .about-img img {
+			margin-left: 10px;
+		}
+
+
+		.skill-mf .progress {
+			/* background-color: #cde1f8; */
+			margin: .5rem 0 1.2rem 0;
+			border-radius: 0;
+			height: .7rem;
+		}
+
+		.skill-mf .progress .progress-bar {
+			height: .7rem;
+			background-color: #ffbd39;
+		}
+
+
+		/* Animation styles */
+		#typing-animation {
+			position: relative;
+			font-size: 30px;
+			font-weight: bold;
+			color: rgb(255, 255, 255);
+			overflow: hidden;
+			white-space: nowrap;
+			animation: typing 3s steps(20, end) infinite;
+		}
+
+		#typing-animation:before {
+			content: "";
+			/* position: absolute; */
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background-color: #ccc;
+			animation: typing-cursor 0.5s ease-in-out infinite;
+		}
+
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+
+		@keyframes typing-cursor {
+			from {
+				width: 5px;
+			}
+
+			to {
+				width: 0;
+			}
+		}
+
+
+		/* project image zoom effect */
+
+		.zoom-effect {
+			overflow: hidden;
+			transition: transform 0.3s ease-out;
+		}
+
+		.zoom-effect:hover {
+			transform: scale(1.1);
+		}
+	</style>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Salman Zaidi</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third js-fullheight order-md-last img"
+							style="background-image:url(images/bg_1.png);">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Salman Zaidi</span></h1>
+
+								<!-- Element to contain animated typing -->
+								<span id="typing-animation"></span>
+
+								<script>
+
+									// Initialize the typing animation
+									const typingAnimationElement = document.getElementById('typing-animation');
+
+									// Create an array of typing text
+									const typingTexts = [
+										'Software Engineer  ',
+										'Data Engineer      ',
+										'Data Scientist     ',
+									];
+
+									// Create a function to display the typing animation for a given text
+									function playTypingAnimation(text) {
+										// Loop through each character and add it to the element
+										for (let i = 0; i < text.length; i++) {
+											setTimeout(() => {
+												typingAnimationElement.textContent += text[i];
+											}, i * 200); // Increase the delay to slow down the typing animation
+										}
+
+										// Once the animation is complete, reset the text and start over
+										setTimeout(() => {
+											typingAnimationElement.textContent = '';
+											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+										}, text.length * 200);
+									}
+
+									// Start the typing animation loop
+									playTypingAnimation(typingTexts[0]);
+
+								</script>
+
+								<br>
+								<br>
+								<h2>A Staff Software Engineer</h2>
+								<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+								<!-- <br> -->
+								<p><a href="https://linkedin.com/in/dr-zaidi" class="btn btn-primary py-3 px-4"
+										target="_blank" rel="noopener noreferrer">Linkedin</a>
+									<a href="https://github.com/drsshz"
+										class="btn btn-white btn-outline-white py-3 px-4" target="_blank"
+										rel="noopener noreferrer">Projects Portfolio</a>
+								<p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+					<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+										<div class="about-img">
+											<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+										</div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+										<div class="about-info">
+											<p><span class="title-s">Name: </span> <span>Salman Zaidi</span></p>
+											<p><span class="title-s">Job Role: </span> <span>Staff Software
+													Engineer</span>
+											</p>
+											<p><span class="title-s">Experience: </span> <span>16 Years</span>
+											</p>
+											<p><span class="title-s">Address: </span> <span>Leonberg, Germany</span></p>
+										</div>
+									</div>
+								</div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+
+									<span>Programming(Python, SQL, C++, JavaScript, Bash, Bash, Groovy)</span> <span
+										class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%"
+											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>Data Extraction/Ingestion (Kafka, Spark Streaming, AirByte, FiveTrain,
+										DLT)</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%"
+											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>Data Modelling/Processing (Apache Spark, dbt)</span> <span
+										class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%"
+											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>Data Orchestration (Apache Airflow, Dagster)</span> <span
+										class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%"
+											aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>Data Visualization (Dash, Streamlit, Metabase)</span> <span
+										class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%"
+											aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>Databases (SQL/NoSQL,OLAP/OLTP)</span> <span class="pull-right">60%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%"
+											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>Cloud Infra (AWS, GCP, Azure)</span> <span class="pull-right">60%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%"
+											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>Machine Learning/Deep Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%"
+											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>CI/CD (Docker, Github, ECS/EKS, Kubernetes)</span> <span
+										class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%"
+											aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								<p> Highly flexible Ph.D. graduate with strong analytical and problem solving skills to
+									turn complex requirement into scalable and robusts systems offering technical
+									expertise in software and data engineering, data science and analytics, machine
+									learning, parallel and distributed computing; focusing on quality and
+									efficiency.Demonstrated success in leading impactful projects and providing
+									effective
+									mentorship.
+								</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Software Engineering, Data
+											Engineering, Data Science &amp; Analytics, Computer Vision, DevOps,
+											ML/DL</span>
+									</li>
+									<li class="d-flex"><span>Domain:</span> <span>Data-driven Modelling, Advancded
+											Driving
+											Assistance Systems (ADAS), Automated Driving (AD)
+										</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Ph.D. (Dr. -Ing.)
+											Univ. of Kassel, Germany</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, German, Urdu</span></li>
+									<li class="d-flex"><span>Architecture:</span> <span>Software design, ETL/ELT, Data
+											orchestration,Data Viz</span></li>
+									<li class="d-flex"><span>Frameworks:</span> <span>Keras, Pytorch, Tensor Flow,
+											SQLAlchemy, Cuda
+										</span></li>
+									<li class="d-flex"><span>DBMS:</span> <span>Amazon Athena, Duckdb, PostgreSQL
+											Snowflake, BigQuery</span></li>
+									<li class="d-flex"><span>NoSQL:</span> <span>Amazon Dynamodb, Redis, MongoDB,
+											Cassandra</span></li>
+									<li class="d-flex"><span>Major Tools:</span> <span>Git, dbt, dlt, docker, airbtye,
+											github actions,airflow, kubernetes, airbyte, dagster</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel,
+											JIRA, MIRO, Pixlr, Confluence</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Squash, Teaching</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+
+						<!-- <div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/rishabhnmishra/"
+										class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Resume</h1>
+					<h2 class="mb-4">Resume</h2>
+					<p>Seasoned Staff Software / Data Engineerg with 5+ years of experience driving business strategies
+						through
+						data-driven insights. Proven expertise in software engineering, data science and engineering,
+						statistical analysis, machine learning algorithms.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h1 class="big-4">Experience</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">OCT 2022-Present</span>
+						<h2>Staff Software Engineer</h2>
+						<span class="position">Torc EU GmbH, Stuttgart Germany</span>
+						<p class="mt-4"> Torc Europe GmbH is an independent entity and a 100% subsidiary of Torc
+							Robotics, Inc. Close to an existing Daimler Truck Research and Development facility and near
+							the Daimler Truck.
+						<ul>
+							<li><span class="experience-bpt">Traffic Scenario Identification: </span> Established and
+								deployed innova- tive Python tooling and SQL models to analyze and validate critical
+								traffic scenarios; leveraging AWS Glue, Athena, and data build tool (dbt) for seamless
+								scalability.</li>
+							<li><span class="experience-bpt">CloudPipelines: </span>Designed and implemented robust ETL
+								pipelines using AWS Step Functions, Elastic Containser Service (ECS), and automated
+								infrastructure with Terraform, ensuring reliability, observability and monitoring
+								(datadog) and efficiency.
+							</li>
+							<li><span class="experience-bpt">Machine Learning and Deep learning: </span> Applied
+								advanced ML and DL techniques to uncover traffic insights, facilitating validation pro-
+								cesses.</li>
+							<li><span class="experience-bpt">DevOps: </span> Streamlined deployment processes by
+								implementing CI/CD pipelines with GitHub Actions and automated cloud infrastructure
+								provisioning using Terraform, enhancing team productivity and system reliability.</li>
+						</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">April 2019 - Sep 2022</span>
+						<h2>Software Development Engineer</h2>
+						<span class="position">Robert Bosch GmbH, Leonberg, Germany</span>
+						<p class="mt-4">Bosch is the largest automotive supplier.
+						<ul>
+							<li><span class="experience-bpt">Major Responsibilities</span>
+								<ul>
+									<li>ISP control based on the imager data and ISP tuning for best possible generation
+										of images.</li>
+									<li>Exposure control of full HDR images for the mitigation of image artifacts (e.g.
+										motion blur, LED flicker).</li>
+									<li>Strategies for optimal KPIs for computer and display vision.</li>
+								</ul>
+							</li>
+							<li><span class="experience-bpt">Major Technologies</span>
+								<ul>
+									<li>Deep learning frameworks (e.g. YOLO for video perception).</li>
+									<li>Optimization framework (e.g. Particle Swarm Optimization (PSO), Nelder-Mead,
+										CMA-ES, Bayesion optimization, Hyperband, BOHB).</li>
+									<li>OOP-based, parallel and distributed programming in Python (opencv, numpy, scipy,
+										multithreading, multiprocessing).</li>
+									<li>Containerized services based on client and server architecture in Python.</li>
+									<li>Embedded C++ including Cuda for time and memory efficient programming</li>
+								</ul>
+							</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Mar 2017 - Mar 2019</span>
+						<h2>Software Toolchain Developer</h2>
+						<span class="position">ITK Engineering GmbH, Munich, Germany</span>
+						<p class="mt-4">As a subsidiary of Bosch, it serves clients from industries including
+							automotive, aerospace, and medical technology.
+						<ul>
+							<li>Responsible for Hardware-in-the-loop (HIL) and Software-in-the- Loop (SIL) toolchain
+								infrastructure architecture / automaton
+							</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date"> OCT 2011 - FEB 2017</span>
+						<h2>Research Associate</h2>
+						<span class="position">University of Kassel, Germany</span>
+						<p class="mt-4">Founded in 1971 located in Kassel, Hessen, in central Germany.
+						<ul>
+							<li> Application of computational intelligence for data driven modelling of dynamic systems
+								with uncertainties
+							</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="row">
+				<h1 class="big-4">Education</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2011 - 2016</span>
+						<h2>Ph.D. (Dr. -Ing.)</h2>
+						<span class="position">Univ. of Kassel, Germany</span>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2006 – 2008</span>
+						<h2>M.Sc. in Sys. Engineering</h2>
+						<span class="position">PIEAS, Pakistan</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="https://drive.google.com/file/d/18Cs1018OanDkmJ73_xIvfbAInnHNqr6z/view?usp=drive_link"
+							class="btn btn-primary py-4 px-5" target="_blank" rel="noopener noreferrer">Download CV</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Projects</h2>
+					<p>Below are the sample Data Analytics projects on Python, SQL, Airflow, dbt, Airbyte and Soda</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/drsshz/e2e_fraud_transactions_detection" target="_blank"
+							rel="noopener noreferrer" class="block-20 zoom-effect"
+							style="background-image: url('images/proj_1.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a target="_blank" rel="noopener noreferrer"
+									href="https://github.com/drsshz/e2e_fraud_transactions_detection">Data Engineering
+									E2E: Fraud Detection Project</a></h3>
+							<p>This project demonstrates a data pipeline for processing, analyzing, and publishing fraud
+								detection data. The pipeline integrates multiple modern data engineering tools and
+								technologies to handle data generation, ingestion, transformation, and quality checks,
+								ultimately publishing the results as data marts in snowflake dataware house.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/drsshz/e2e_retail_project"
+							class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a target="_blank" rel="noopener noreferrer"
+									href="https://github.com/drsshz/e2e_retail_project">Data Engineering E2E: Retail
+									Project</a></h3>
+							<p>This project demonstrates the creation of an end-to-end data pipeline using Apache
+								Airflow, BigQuery, dbt, Soda, and the Astro SDK. It showcases a robust pipeline that
+								uploads retail data to Google Cloud Storage, ingests it into BigQuery, performs
+								transformations using dbt, and ensures data quality using Soda.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/drsshz/dash_dashboard"
+							class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a target="_blank" rel="noopener noreferrer"
+									href="https://github.com/drsshz/dash_dashboard">Python Data Viz: Financial Dashboard
+									- Dashboard App
+								</a></h3>
+							<p>A financial dashboard application for visualizing and analyzing financial data of Top 12
+								German Companies. Currently only the net income is used as the indicator in this app.
+								Information about the data:
+								https://www.kaggle.com/datasets/willianoliveiragibin/top-12-german-companies</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<!-- added justify-content-center to center align the last two projects -->
+			<div class="row d-flex justify-content-center">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a target="_blank" rel="noopener noreferrer"
+							href="https://github.com/drsshz/streamlit_dashboard" class="block-20 zoom-effect"
+							style="background-image: url('images/proj_4.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a target="_blank" rel="noopener noreferrer"
+									href="https://github.com/drsshz/streamlit_dashboard"> Python Data Viz: Superstore
+									Dashboard - Streamlit App</a></h3>
+							<p>This project contains a Streamlit application designed to visualize and analyze
+								Superstore data. It uses the MVC design pattern (Model View Controller). The dashboard
+								provides interactive charts, filters, and insights into sales, profits, and other key
+								metrics.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/drsshz/e2e_real_time_data_streaming"
+							class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a target="_blank" rel="noopener noreferrer"
+									href="https://github.com/drsshz/e2e_real_time_data_streaming">Data Engineering E2e: Real Time Data Streaming - Using: Kafka, PySpark, Cassandar, Airflow and docker</a></h3>
+							<p>This project focuses on building a real-time data streaming pipeline, encompassing all phases from data ingestion to processing and storage. It leverages a robust stack of tools and technologies, including Apache Airflow, Python, Apache Kafka, Apache Zookeeper, Apache Spark, and Cassandra, all seamlessly containerized using Docker.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+			<!-- <div class="row d-md-flex align-items-center">
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="20">0</strong>
+							<span>Achievements</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="30">0</strong>
+							<span>Projects</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="1000">0</strong>
+							<span>Mentored Students</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="500">0</strong>
+							<span>Cups of coffee</span>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+
+		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>More projects on<span> Github </span> </h2>
+					<div class="heading">
+						<h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/drsshz/" class="btn btn-primary py-3 px-5">GitHub</a></p>
+					</div>
+				</div>
+			</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					<p>Below are the details to reach out to me!</p>
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>Leonberg, Germany</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel://004917646784594">+4917646784594 </a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto:salman.zaidi@gmx.de">salman.zaidi@gmx.de</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-globe"></span>
+						</div>
+						<h3 class="mb-4">Download Resume</h3>
+						<p><a target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-5" href="https://drive.google.com/file/d/18Cs1018OanDkmJ73_xIvfbAInnHNqr6z/view"">Download</a></p>
+					</div>
+				</div>
+			</div>
+	</section>
+
+
+
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+						is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
+							href="https://colorlib.com" target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
