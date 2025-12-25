@@ -5,7 +5,7 @@ Welcome to my personal portfolio website! 🌟
 This repository contains the codebase for my personal portfolio website, which showcases my professional journey, skills, projects, and achievements.
 
 ## 🌐 Live URL
-Visit the live website: [salmanzaidi.de/portfolio](https://www.salmanzaidi.de/portfolio)
+Visit the live website: [salmanzaidi.de/portfolio](https://drsshz.github.io/dev-portfolio/)
 
 ---
 
@@ -13,7 +13,6 @@ Visit the live website: [salmanzaidi.de/portfolio](https://www.salmanzaidi.de/po
 The portfolio is built using the following technologies:
 
 - **Frontend**: HTML, CSS, JavaScript
-- **Hosting**: [www.hostinger.com]
 - **Version Control**: Git
 
 ---
