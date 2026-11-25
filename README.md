@@ -1,33 +1,17 @@
-# Personal Portfolio Website
+# Personal Portfolio — Dr.-Ing. Salman Zaidi
 
-Welcome to my personal portfolio website! 🌟
+Live website: https://drsshz.github.io/dev-portfolio/
 
-This repository contains the codebase for my personal portfolio website, which showcases my professional journey, skills, projects, and achievements.
+This static GitHub Pages portfolio highlights production machine learning, distributed systems, AI and data platforms, and research in computational intelligence.
 
-## 🌐 Live URL
-Visit the live website: [salmanzaidi.de/portfolio](https://drsshz.github.io/dev-portfolio/)
+## Files
 
----
+- `index.html` — professional profile, experience, skills, engineering case studies, existing GitHub projects and contact information.
+- `cv.html` — public CV with a browser Print / Save as PDF button. Private personal details are omitted.
+- `css/`, `js/`, `images/`, `fonts/`, `lib/` — existing template and assets.
 
-## 🛠️ Tech Stack
-The portfolio is built using the following technologies:
+## Local preview
 
-- **Frontend**: HTML, CSS, JavaScript
-- **Version Control**: Git
+Run `python3 -m http.server 8000` from the repository root, then open http://localhost:8000.
 
----
-
-## 📂 Features
-
-- **About Me**: Overview of my background, professional expertise, and personal interests.
-- **Skills**: A comprehensive list of technical and soft skills.
-- **Portfolio Projects**: Detailed descriptions of selected projects, including technologies used and live links.
-- **Contact**: Easy access to my contact details or a form for direct communication.
-
-
----
-## 🧑‍💻 About Me
-I am Salman Zaidi, a professional with expertise in software engineering, data science, machine learning, and cloud technologies. With a Ph.D. in System Identification and years of industry experience, I am passionate about building innovative solutions and sharing knowledge.
-
----
-Thank you for visiting my portfolio! 😊
+Professional case studies are high-level summaries. Existing Colorlib template attribution is retained.
